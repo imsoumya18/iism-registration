@@ -1,0 +1,10 @@
+# Personal data: never commit
+config.json
+files/*
+!files/.gitkeep
+iism_after_submit.png
+
+# Python
+.venv/
+__pycache__/
+*.pyc

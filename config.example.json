@@ -1,0 +1,89 @@
+{
+  "_comment": "Template. Copy to config.json and fill in the applicant section. config.json is git-ignored; never commit it.",
+  "site": {
+    "form_url": "https://admission.iismgulmarg.in/admission_form.aspx?mobile={mobile}",
+    "placeholder_option_value": "0",
+    "validation_group": "sv",
+    "seat_full_regex": "Seat Not Available",
+    "ids": {
+      "course": "ddlCourse",
+      "level": "ddlCourseLevel",
+      "schedule": "ddlScheduleCourse",
+      "state": "ddlState",
+      "dob": "txtDateOfBirth",
+      "seats": "txtAvailableSeat",
+      "fee": "txtCourseFee",
+      "declaration": "chkIAgree",
+      "submit": "btnSubmit"
+    }
+  },
+  "target": {
+    "booking_opens": "2026-11-12 10:00",
+    "course_regex": "ski",
+    "level_regex": "basic",
+    "batch_preferences": [
+      {
+        "label": "Batch 3: 17 Jan - 30 Jan (Basic 50 seats)",
+        "regex": "\\b17\\s*(?:st|nd|rd|th)?\\s*Jan"
+      },
+      {
+        "label": "Batch 4: 31 Jan - 13 Feb (Basic 40 seats)",
+        "regex": "\\b31\\s*(?:st|nd|rd|th)?\\s*Jan"
+      }
+    ],
+    "state_value": "1",
+    "state_label": "JAMMU AND KASHMIR"
+  },
+  "applicant": {
+    "mobile_field": "txtMobileNo",
+    "email_field": "txtEmailId",
+    "dob": "DD/MM/YYYY",
+    "text_fields": {
+      "txtName": "",
+      "txtFatherName": "",
+      "txtNationality": "Indian",
+      "txtDomicile": "",
+      "txtHouseNoApartment": "",
+      "txtStreetVillageColony": "",
+      "txtDistrictCity": "",
+      "txtPincode": "",
+      "txtMobileNo": "",
+      "txtEmailId": "",
+      "txtBloodGroup": "",
+      "txtMedicalCategory": "Fit",
+      "txtHeight": "",
+      "txtWeight": "",
+      "txtWaist": "",
+      "txtShoeSize": "",
+      "txtEmergencyContactName": "",
+      "txtEmergencyContactPhone": ""
+    },
+    "select_by_text": {
+      "ddlEduationQualification": "Graduation",
+      "ddlVegetarianOrNon": "Non-Vegetarian"
+    },
+    "tick_declaration": true
+  },
+  "files": {
+    "FupBirthCertificate": "files/dob_certificate.jpg",
+    "FupEducationQualification": "files/qualification_certificate.jpg",
+    "FupPhototOfApplicant": "files/photo.jpg",
+    "FupSignatureOfAppicant": "files/signature.jpg",
+    "FupParentGuardianSignature": "files/signature.jpg"
+  },
+  "timing": {
+    "nav_timeout_ms": 60000,
+    "poll_interval_s": 1,
+    "retry_minutes": 15,
+    "session_refresh_s": 600,
+    "match_attempts": 2,
+    "manual_wait_minutes": 10,
+    "manual_settle_s": 1.5
+  },
+  "browser": {
+    "channel": "chrome"
+  },
+  "output": {
+    "screenshot": "iism_after_submit.png"
+  }
+}
